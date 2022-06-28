@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Pagamento</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container_sacola">
+            <nav class="menu">
+                <a href="index.html" class="link_sacola">SACOLA</a>
+                <a href="pagamento.html" class="link_pagamento">PAGAMENTO</a>
+                <a href="confirmacao.html" class="link_confirmacao">CONFIRMAÇÃO</a>
+            </nav>
+            <h1 class="produtos">CARTÃO DE CREDITO</h1>
+            <section class="rectangle-2" id="cartao">
+                <div class="numero_cartao">
+                    <label for="">Número do cartão:</label>
+                    <input type="text" placeholder="____-____-____-____">
+                </div>
+
+                <div class="nome_cartao">
+                    <label for="">Nome do titular:</label>
+                    <input type="text" placeholder="Como no cartão">
+                </div>
+
+                <div class="validade_cartao">
+                    <div>
+                        <label for="">Validade (mês/ano):</label>
+                        <input type="text" placeholder="__/__">
+                    </div>
+                    <div>
+                        <label for="">CVV:</label>
+                        <input type="text" placeholder="___">
+                    </div>
+                    
+                </div>
+                
+            </section>
+            <div class="container_caixa">
+                <div class="produtos_caixa">
+                    <p class="caixa">PRODUTOS</p>
+                    <p class="caixa_valor" id="valor_caixa">R$</p>
+                </div>
+                <div class="frete_caixa">
+                    <p class="frete">FRETE</p>
+                    <p class="frete_preco" id="frete">R$</p>
+                </div>
+                <div class="desconto_caixa">
+                    <p class="desconto">DESCONTO</p>
+                    <p class="desconto_preco" id="desconto">-R$</p>
+                </div>
+                <div class="total_caixa">
+                    <p class="total">TOTAL</p>
+                    <p class="total_preco" id="total">R$</p>
+                </div>
+            </div>
+            <button>FINALIZAR O PEDIDO</button>
+        </div>
+     </div>      
+</body>
+
+</html>
