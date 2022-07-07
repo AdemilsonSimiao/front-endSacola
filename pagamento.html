@@ -16,45 +16,42 @@
                 <a href="pagamento.html" class="link_pagamento">PAGAMENTO</a>
                 <a href="confirmacao.html" class="link_confirmacao">CONFIRMAÇÃO</a>
             </nav>
-            
             <h1 class="produtos">CARTÃO DE CREDITO</h1>
             <section class="rectangle-2" id="cartao">
-                <form action="">
+                <form action="" method="get" id="form">
                     <div class="nome numero_cartao">
                         <label for="">Nome:</label>
-                        <input type="text" placeholder="Nome">
+                        <input type="text" name="nome" id="nome" placeholder="Nome">
                     </div>
                     <div class="email numero_cartao">
                         <label for="">Email:</label>
-                        <input type="email" placeholder="Email">
+                        <input type="email" name="email" id="email" placeholder="Email">
                     </div>
                     <div class="endereço numero_cartao">
                         <label for="">Endereço:</label>
-                        <input type="text" placeholder="Endereço">
+                        <input type="text" name="endereco" id="endereco" placeholder="Endereço">
                     </div>
                 </form>
                 <div class="numero_cartao">
                     <label for="">Número do cartão:</label>
-                    <input type="text" placeholder="____-____-____-____">
+                    <input type="text" name="numero_cartao" id="numero_cartao" placeholder="____-____-____-____">
                 </div>
 
                 <div class="nome_cartao">
                     <label for="">Nome do titular:</label>
-                    <input type="text" placeholder="Como no cartão">
+                    <input type="text" name="nome_cartao" id="nome_cartao" placeholder="Como no cartão">
                 </div>
 
                 <div class="validade_cartao">
                     <div>
                         <label for="">Validade (mês/ano):</label>
-                        <input type="text" placeholder="__/__">
+                        <input type="text" name="validade" id="validade" placeholder="__/__">
                     </div>
                     <div>
                         <label for="">CVV:</label>
                         <input type="text" placeholder="___">
                     </div>
-                    
                 </div>
-                
             </section>
             <div class="container_caixa">
                 <div class="produtos_caixa">
@@ -78,5 +75,4 @@
         </div>
      </div>      
 </body>
-
 </html>

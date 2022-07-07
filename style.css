@@ -42,7 +42,7 @@ body{
     padding: 0 15px;
 }
 
-.link_sacola :visited{
+.link_sacola:visited{
     color: #FF7800;
 }
 
