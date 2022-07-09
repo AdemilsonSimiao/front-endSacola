@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="comprar.js" defer></script>
+    <script src="bd.js" defer></script>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>Pagamento</title>
@@ -13,12 +16,13 @@
         <div class="container_sacola">
             <nav class="menu">
                 <a href="index.html" class="link_sacola">SACOLA</a>
-                <a href="pagamento.html" class="link_pagamento">PAGAMENTO</a>
-                <a href="confirmacao.html" class="link_confirmacao">CONFIRMAÇÃO</a>
+                <a  class="link_pagamento">PAGAMENTO</a>
+                <a  class="link_confirmacao">CONFIRMAÇÃO</a>
             </nav>
             <h1 class="produtos">CARTÃO DE CREDITO</h1>
             <section class="rectangle-2" id="cartao">
                 <form action="" method="get" id="form">
+                    <input type="hidden" id="id-atualizar" value="">
                     <div class="nome numero_cartao">
                         <label for="">Nome:</label>
                         <input type="text" name="nome" id="nome" placeholder="Nome">
@@ -71,7 +75,7 @@
                     <p class="total_preco" id="total">R$</p>
                 </div>
             </div>
-            <button>FINALIZAR O PEDIDO</button>
+            <button  type="submit" id="btn" onclick="fPedido()" >FINALIZAR O PEDIDO</button>
         </div>
      </div>      
 </body>
